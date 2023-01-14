@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calendar</title>
+    <style>
+    img{
+            width: 100%;
+            height: 350px;
+        }
+    .calender{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            /* grid-template-rows: 25px repeat(5,45px); */
+            row-gap: 10px;
+            column-gap: 10px;
+    }
+    .day{
+        background-color: rgb(9, 146, 192);
+        color: white;
+        height: 25px;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    .date{
+        background-color: rgb(9, 146, 192);
+        height: 45px;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    .other-month{
+        background-color: lightgray;
+    }
+    .holiday{
+        background-color: red;
+    }
+    .footer{
+        background-color: rgb(9, 146, 192);
+        color: white;
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+    }
+    </style>
+</head>
+<body>
+        <img src="jbl.jpg" alt="">
+    <div class="back">
+    <h1>January 2023</h1>
+    <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day holiday">F</div>
+        <div class="day holiday">S</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date holiday">6</div>
+        <div class="date holiday">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date holiday">13</div>
+        <div class="date holiday">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date holiday">20</div>
+        <div class="date holiday">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date holiday">27</div>
+        <div class="date holiday">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
+        <div class="date other-month">1</div>
+        <div class="date other-month">2</div>
+        <div class="date other-month">3</div>
+        <div class="date other-month">4</div>
+    </div>
+    <h1>February 2023</h1>
+    <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day holiday">F</div>
+        <div class="day holiday">S</div>
+        <div class="date other-month">29</div>
+        <div class="date other-month">30</div>
+        <div class="date other-month">31</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date holiday">3</div>
+        <div class="date holiday">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date holiday">10</div>
+        <div class="date holiday">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date holiday">17</div>
+        <div class="date holiday">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date holiday" title="Mother Language Day">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date holiday">24</div>
+        <div class="date holiday">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date other-month">1</div>
+        <div class="date other-month">2</div>
+        <div class="date other-month">3</div>
+        <div class="date other-month">4</div>
+    </div>
+    <h1>March 2023</h1>
+    <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day holiday">F</div>
+        <div class="day holiday">S</div>
+        <div class="date other-month">26</div>
+        <div class="date other-month">27</div>
+        <div class="date other-month">28</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date holiday">3</div>
+        <div class="date holiday">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date holiday" title="Shab E Bhorat - Subject to Moon">8</div>
+        <div class="date">9</div>
+        <div class="date holiday">10</div>
+        <div class="date holiday">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date holiday" title="National Children Day">17</div>
+        <div class="date holiday">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date holiday">24</div>
+        <div class="date holiday">25</div>
+        <div class="date holiday" title="Independence Day">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
+        <div class="date other-month">1</div>
+    </div>
+    <h1>April 2023</h1>
+    <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day holiday">F</div>
+        <div class="day holiday">S</div>
+        <div class="date other-month">26</div>
+        <div class="date other-month">27</div>
+        <div class="date other-month">28</div>
+        <div class="date other-month">29</div>
+        <div class="date other-month">30</div>
+        <div class="date other-month">31</div>
+        <div class="date holiday">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date holiday">7</div>
+        <div class="date holiday">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date holiday" title="Bengali New Year & Juma Tul Bida - Subject to Moon">14</div>
+        <div class="date holiday">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date holiday" title="Shob E Kadar">18</div>
+        <div class="date">19</div>
+        <div class="date holiday" title="Eid ul Fitr - Subject to Moon">20</div>
+        <div class="date holiday" title="Eid ul Fitr - Subject to Moon">21</div>
+        <div class="date holiday" title="Eid ul Fitr - Subject to Moon">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date holiday">28</div>
+        <div class="date holiday">29</div>
+        <div class="date">30</div>
+        <div class="date other-month">1</div>
+        <div class="date other-month">2</div>
+        <div class="date other-month">3</div>
+        <div class="date other-month">4</div>
+        <div class="date other-month">5</div>
+        <div class="date other-month">6</div>
+    </div>
+    <h1>May 2023</h1>
+    <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day holiday">F</div>
+        <div class="day holiday">S</div>
+        <div class="date other-month">30</div>
+        <div class="date holiday" title="International Labour Day">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date holiday">5</div>
+        <div class="date holiday">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date holiday">12</div>
+        <div class="date holiday">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date holiday">19</div>
+        <div class="date holiday">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date holiday" title="Buddha Purnima">26</div>
+        <div class="date holiday">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
+        <div class="date other-month">1</div>
+        <div class="date other-month">2</div>
+        <div class="date other-month">3</div>
+    </div>
+    <h1>June 2023</h1>
+    <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day holiday">F</div>
+        <div class="day holiday">S</div>
+        <div class="date other-month">28</div>
+        <div class="date other-month">29</div>
+        <div class="date other-month">30</div>
+        <div class="date other-month">31</div>
+        <div class="date">1</div>
+        <div class="date holiday">2</div>
+        <div class="date holiday">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date holiday">9</div>
+        <div class="date holiday">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date holiday">16</div>
+        <div class="date holiday">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date holiday">23</div>
+        <div class="date holiday">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date holiday" title="Eid ul Azha">27</div>
+        <div class="date holiday" title="Eid ul Azha">28</div>
+        <div class="date holiday" title="Eid ul Azha">29</div>
+        <div class="date holiday">30</div>
+        <div class="date other-month">1</div>
+    </div>
+    <h1>July 2023</h1>
+    <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day holiday">F</div>
+        <div class="day holiday">S</div>
+        <div class="date other-month">25</div>
+        <div class="date other-month">26</div>
+        <div class="date other-month">27</div>
+        <div class="date other-month">28</div>
+        <div class="date other-month">29</div>
+        <div class="date other-month">30</div>
+        <div class="date holiday" title="Bank Holiday">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date holiday">7</div>
+        <div class="date holiday">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date holiday">14</div>
+        <div class="date holiday">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date holiday">21</div>
+        <div class="date holiday">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date holiday" title="Ashura - Subject to Moon">28</div>
+        <div class="date holiday">29</div>
+        <div class="date">30</div>
+        <div class="date">30</div>
+        <div class="date other-month">1</div>
+        <div class="date other-month">2</div>
+        <div class="date other-month">3</div>
+        <div class="date other-month">4</div>
+        <div class="date other-month">5</div>
+    </div>
+    <h1>August 2023</h1>
+    <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day holiday">F</div>
+        <div class="day holiday">S</div>
+        <div class="date other-month">30</div>
+        <div class="date other-month">31</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date holiday">4</div>
+        <div class="date holiday">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date holiday">11</div>
+        <div class="date holiday">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date holiday" title="National Mourning Day">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date holiday">18</div>
+        <div class="date holiday">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date holiday">25</div>
+        <div class="date holiday">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
+        <div class="date other-month">1</div>
+        <div class="date other-month">2</div>
+    </div>
+    <h1>September 2023</h1>
+    <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day holiday">F</div>
+        <div class="day holiday">S</div>
+        <div class="date other-month">27</div>
+        <div class="date other-month">28</div>
+        <div class="date other-month">29</div>
+        <div class="date other-month">30</div>
+        <div class="date other-month">31</div>
+        <div class="date holiday">1</div>
+        <div class="date holiday">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date holiday" title="Shuvo Jonmaostomi">6</div>
+        <div class="date">7</div>
+        <div class="date holiday">8</div>
+        <div class="date holiday">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date holiday">15</div>
+        <div class="date holiday">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date holiday">22</div>
+        <div class="date holiday">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date holiday" title="Eid E Miladunnabi">27</div>
+        <div class="date">28</div>
+        <div class="date holiday">29</div>
+        <div class="date holiday">30</div>
+    </div>
+    <h1>October 2023</h1>
+    <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day holiday">F</div>
+        <div class="day holiday">S</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date holiday">6</div>
+        <div class="date holiday">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date holiday">13</div>
+        <div class="date holiday">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date holiday">20</div>
+        <div class="date holiday">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date  holiday" title="Bijoya Doshomi">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date holiday">27</div>
+        <div class="date holiday">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
+        <div class="date other-month">1</div>
+        <div class="date other-month">2</div>
+        <div class="date other-month">3</div>
+        <div class="date other-month">4</div>
+    </div>
+    <h1>November 2023</h1>
+    <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day holiday">F</div>
+        <div class="day holiday">S</div>
+        <div class="date other-month">29</div>
+        <div class="date other-month">30</div>
+        <div class="date other-month">31</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date holiday">3</div>
+        <div class="date holiday">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date holiday">10</div>
+        <div class="date holiday">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date holiday">17</div>
+        <div class="date holiday">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date holiday">24</div>
+        <div class="date holiday">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date other-month">1</div>
+        <div class="date other-month">2</div>
+    </div>
+    <h1>December 2023</h1>
+    <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day holiday">F</div>
+        <div class="day holiday">S</div>
+        <div class="date other-month">27</div>
+        <div class="date other-month">28</div>
+        <div class="date other-month">29</div>
+        <div class="date other-month">30</div>
+        <div class="date other-month">31</div>
+        <div class="date holiday">1</div>
+        <div class="date holiday">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date holiday">8</div>
+        <div class="date holiday">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date holiday">15</div>
+        <div class="date holiday" title="Bijoy Dibosh">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date holiday">22</div>
+        <div class="date holiday">23</div>
+        <div class="date">24</div>
+        <div class="date holiday" title="Borodin">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date holiday">29</div>
+        <div class="date holiday">30</div>
+        <div class="date holiday" title="Bank Holiday">31</div>
+        <div class="date other-month">1</div>
+        <div class="date other-month">2</div>
+        <div class="date other-month">3</div>
+        <div class="date other-month">4</div>
+        <div class="date other-month">5</div>
+        <div class="date other-month">6</div>
+    </div>
+</div>
+<div class="footer">
+    <h3 style="text-align: center;">Soikat Dey, Senior officer-IT, Janata Bank Limited, Area Office, Chattogram-C, Chattogram.</h3>
+</div>
+</body>
+</html>
